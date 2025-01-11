@@ -81,9 +81,9 @@ if DATABASE_URL:
 
 UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "")
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = "https://github.com/SPARKBRO/AEON.git"
+    UPSTREAM_REPO = "https://github.com/SPARKBRO/AEON"
 
-UPSTREAM_BRANCH = environ.get("UPSTREAM_BRANCH", "")
+UPSTREAM_BRANCH = environ.get("UPSTREAM_BRANCH", "upstream")
 if len(UPSTREAM_BRANCH) == 0:
     UPSTREAM_BRANCH = "upstream"
 
