@@ -81,11 +81,11 @@ if DATABASE_URL:
 
 UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "")
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = "https://github.com/SPARKBRO/AEON"
+    UPSTREAM_REPO = "https://github.com/SPARKBRO/AEON2"
 
 UPSTREAM_BRANCH = environ.get("UPSTREAM_BRANCH", "")
 if len(UPSTREAM_BRANCH) == 0:
-    UPSTREAM_BRANCH = "upstream"
+    UPSTREAM_BRANCH = "main"
 
 if path.exists(".git"):
     run(["rm", "-rf", ".git"], check=False)
